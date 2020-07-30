@@ -4,7 +4,7 @@ import BookList from '../src/BookList'
 const App = () => {
   return(
     <div>
-      <h1>Hello from the App</h1>
+      <h1>Mini Book-Store</h1>
       <BookList/>
     </div>
   )
