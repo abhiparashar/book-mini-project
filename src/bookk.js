@@ -1,28 +1,28 @@
 import React, { Component } from "react";
-import '../src/App.css'
+import "../src/App.css";
 
 export default class Book extends Component {
-  constructor(props){
-    super(props)
+  constructor(props) {
+    super(props);
     this.state = {
-      count:1
-    }
+      count: 1,
+    };
   }
-  addCount = () =>{
+  addCount = () => {
     this.setState({
-      count:this.state.count+1
-    })
-  }
-  lowerCount = () =>{
+      count: this.state.count + 1,
+    });
+  };
+  lowerCount = () => {
     this.setState({
       count: this.state.count - 1,
     });
-  }
-  resetcount = () =>{
+  };
+  resetcount = () => {
     this.setState({
       count: 0,
     });
-  }
+  };
   render() {
     const { img, title, author } = this.props.info;
     return (
